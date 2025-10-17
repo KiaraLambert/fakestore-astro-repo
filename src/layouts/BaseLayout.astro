@@ -1,5 +1,8 @@
 ---
-
+import Header from "../components/Header.astro";
+import "../styles/reset.css";
+import "../styles/global.css";
+const { title } = Astro.props;
 ---
 
 <html lang="en">
@@ -18,5 +21,6 @@
     <body>
         <Header />
         <slot />
+        <Header />
     </body>
 </html>
